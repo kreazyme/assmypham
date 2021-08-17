@@ -1,0 +1,574 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+    background-color: #EFE6F3;
+    overflow-x: hidden;
+}
+#container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.header-tren{
+    background-color: #fff;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+.head-tren{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.head-tren ul{
+    list-style: none;
+    display: flex;
+}
+.head-tren ul li{
+    padding: 0 10px;
+}
+.head-tren ul li:last-child{
+    padding: 0 0 0 10px;
+    border-left: 1px solid rgb(179, 179, 179);
+}
+.header-giua{
+    background-color: #FDFDFE;
+}
+.head-giua{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.head-giua .logo{
+    width: 25%;
+}
+.head-giua form{
+    position: relative;
+}
+.head-giua input{
+    padding: 10px 55px 10px 15px;
+    width: 300px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #EFE6F3;
+}
+.head-giua button{
+    padding: 8px 15px;
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    outline: none;
+    border: none;
+    background-color: #7F4197;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.head-giua .lienhe{
+    display: flex;
+    align-items: center;
+}
+.head-giua>div i{
+    color: #7F4197;
+    font-size: xx-large;
+}
+.header-duoi{
+    background-color: #7F4197;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+nav>ul>li{
+    padding: 12px 20px;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color .2s linear;
+}
+nav>ul>li:hover a,
+li.active a{
+    color: #ff95d3;
+}
+label[for=menu],
+#menu{
+    display: none;
+}
+.banner img{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.danhmuc{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 70px;
+}
+.danhmuc-sp{
+    overflow: hidden;
+    position: relative;
+    width: 31.6%;
+}
+.danhmuc-sp img{
+    width: 100%;
+    object-fit: cover;
+}
+.tendanhmuc{
+    padding: 17px;
+    position: absolute;
+    bottom: 0;
+}
+.tendanhmuc p:first-child{
+    color: #7F4197;
+    font-size: 23px;
+    font-family: 'Pattaya', sans-serif;
+}
+p.tieude{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 25px 0;
+}
+.ds-sanpham{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.ds-sanpham .sanpham{
+    overflow: hidden;
+    width: 23.8%;
+    position: relative;
+    transition: box-shadow .2s linear;
+    border-radius: 5px;
+}
+.ds-sanpham .sanpham:hover{
+    box-shadow: 0px 0px 11px 4px #e2e2e2;
+    cursor: pointer;
+}
+.anhsanpham{
+    overflow: hidden;
+}
+.anhsanpham img{
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+    transition: transform .4s linear;
+}
+.chitietsp{
+    background-color: #fff;
+    height: 92px;
+    width: 100%;
+}
+.sanpham .chitiet{
+    overflow: hidden;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: -46px;
+    position: absolute;
+    transition: bottom .2s linear;
+}
+.chitiet .tensanpham{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(56, 56, 56);
+    transition: color .2s linear;
+}
+.chitiet .giasanpham{
+    color: #7F4197;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.chitiet .muahang{
+    padding: 8px 25px;
+    color: #fff;
+    background-color: #7F4197;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: color .2s linear, border .2s linear, background-color .2s linear;
+}
+.chitiet .muahang:hover{
+    color: #7F4197;
+    border: 1px solid #7F4197;
+    background-color: #fff;
+}
+.sanpham:hover .chitiet{
+    bottom: 0;
+}
+.sanpham:hover .tensanpham{
+    color: #7F4197;
+}
+.sanpham:hover .anhsanpham img{
+    transform: scale(1.1);
+}
+.dichvu{
+    background-image: url("img/background-serivce.jpg");
+    background-position: 50%;
+    background-attachment: fixed;
+    margin: 20px 0;
+    padding: 80px 0;
+    background-repeat: no-repeat;
+}
+.cotdichvu{
+    display: flex;
+    justify-content: space-between;
+}
+.cotdichvu>div{
+    text-align: center;
+}
+.cotdichvu>div i{
+    font-size: xxx-large;
+    color: #7F4197;
+}
+.cotdichvu>div p:nth-child(2){
+    font-size: 22px;
+    font-family: 'Pattaya', sans-serif;
+    color: #7F4197;
+    margin: 5px 0;
+}
+ul.danhmucsp{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+ul.danhmucsp li{
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 0 7px 20px 0;
+    transition: color .2s linear, background-color .2s linear;
+}
+ul.danhmucsp li:first-child,
+ul.danhmucsp li:hover{
+    background-color: #7F4197;
+    color: #fff;
+    cursor: pointer;
+}
+.thuonghieu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ds-tintuc{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.tintuc{
+    overflow: hidden;
+    width: 31%;
+    border-radius: 5px;
+    transition: box-shadow .2s linear;
+}
+.anhtintuc{
+    overflow: hidden;
+    height: 200px;
+}
+.anhtintuc img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tintuc .chitiettin{
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    height: 120px;
+    overflow: hidden;
+}
+.tintuc .chitiettin p:first-child{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: color .2s linear;
+}
+.tintuc .chitiettin p:last-child{
+    font-size: 14px;
+    color: gray;
+}
+.tintuc:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 7px 1px #d6d6d6;
+}
+.tintuc:hover .chitiettin p:first-child{
+    color: #7F4197;
+}
+.dangky{
+    background-color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+.dangky p:nth-child(1){
+    font-size: 30px;
+    font-family: 'Pattaya', sans-serif;
+}
+.dangky p:nth-child(2){
+    margin: 10px 0;
+    color: gray;
+}
+.dangky form{
+    margin-top: 20px;
+}
+.dangky input{
+    padding: 10px 15px;
+    outline: none;
+    background-color: #F5F5F5;
+    border: 1px solid #7F4197;
+    border-radius: 20px;
+    width: 27%;
+}
+.dangky button{
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    background-color: #7F4197;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+}
+footer{
+    background-color: #fff;
+    padding: 20px 0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+}
+.footer>div{
+    overflow: hidden;
+}
+.footer>div:first-child img{
+    width: 85%;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul li{
+    margin: 15px 0;
+}
+.footer p.tieude{
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+.footer .lienhe{
+    display: flex;
+    align-items: center;
+}
+.tranglienhe{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin: 30px 0;
+}
+.tranglienhe .thongtinlienhe{
+    display: flex;
+    flex-direction: column;
+    flex: 1.2;
+}
+.thongtinlienhe p:first-child,
+.tranglienhe .form p{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.thongtinlienhe ul{
+    list-style: none;
+}
+.thongtinlienhe ul li{
+    margin: 10px 0;
+}
+.tranglienhe .form{
+    flex: 1;
+}
+.tranglienhe .form form{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.tranglienhe .form input,
+.tranglienhe .form textarea{
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid rgb(189, 189, 189);
+    margin: 10px 0;
+}
+.tranglienhe .form button{
+    padding: 8px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #7F4197;
+}
+.trangtintuc{
+    margin: 30px 0;
+}
+button.xemthem{
+    display: block;
+    padding: 10px 20px;
+    background-color: #7F4197;
+    color: #fff;
+    border: none;
+    outline: 0;
+    margin: 0 auto;
+}
+.trangsanpham{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    column-gap: 30px;
+}
+.trangsanpham .dssp{
+    flex: 3;
+}
+.trangsanpham .locsanpham{
+    flex: 1;
+    display: flex;
+    row-gap: 30px;
+    flex-direction: column;
+}
+.trangsanpham .sanpham{
+    width: 32%;
+}
+.locsp-tieude{
+    padding: 5px;
+    background-color: #7F4197;
+    color: #fff;
+}
+.locsp-danhmuc,
+.locsp-giatien{
+    border: 1px solid rgb(224, 224, 224);
+}
+.locsp-danhmuc ul,
+.locsp-giatien ul{
+    list-style: none;
+    padding: 5px 10px;
+}
+.locsp-danhmuc ul li,
+.locsp-giatien ul li{
+    margin: 5px 0;
+}
+button.locsp{
+    padding: 5px 10px;
+    background-color: #7F4197;
+    color: #FFF;
+    outline: none;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+ul.phantrang{
+    margin: 30px 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+ul.phantrang li{
+    margin: 0 5px;
+    padding: 7px;
+    transition: color .2s linear, backgrouund-color .2s linear;
+}
+ul.phantrang li:hover,
+ul.phantrang li:nth-child(2){
+    background-color: #7F4197;
+    color: #fff;
+    cursor: pointer;
+}
+.tranggioithieu{
+    padding: 0px 0px 30px 0;
+}
+.tranggioithieu img{
+    display: block;
+    margin: 20px auto;
+}
+.tranggioithieu p{
+    line-height: 30px;
+}
+@media only screen and (max-width: 1200px){
+    #container{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 992px){
+    .head-giua .lienhe{
+        display: none;
+    }
+    .trangsanpham,
+    .tranglienhe{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 768px){
+    nav{
+        position: relative;
+        padding: 5px 0;
+    }
+    nav ul{
+        position: absolute;
+        flex-direction: column;
+        background-color: #7F4197;
+        overflow: hidden;
+        width: 100%;
+        max-height: 0;
+        text-align: center;
+        z-index: 100;
+        transition: max-height .2s linear;
+    }
+    label[for=menu]{
+        display: block;
+        color: #fff;
+        font-size: 25px;
+        margin-left: 5px;
+    }
+    #menu:checked ~ ul{
+        max-height: 200px;
+    }
+    .ds-sanpham .sanpham{
+        width: 32%;
+    }
+    .cotdichvu{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tintuc{
+        width: 49%;
+    }
+    .footer{
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 576px){
+    .head-giua form{
+        display: none;
+    }
+    .ds-sanpham .sanpham{
+        width: 49%;
+    }
+    .ds-tintuc{
+        justify-content: center
+    }
+    .tintuc{
+        width: 85%;
+    }
+}
